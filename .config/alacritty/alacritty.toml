@@ -1,3 +1,17 @@
+general.import = [
+  # uncomment the flavour you want below:
+#   "~/.config/alacritty/catppuccin-latte.toml"
+  # "~/.config/alacritty/catppuccin-frappe.toml"
+  # "~/.config/alacritty/catppuccin-macchiato.toml"
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
 [window]
-opacity = 0.6
+opacity = 0.7
 blur = true
+padding = { x = 20, y = 20 }
+
+[font]
+size = 12
+normal.family = "FiraCode Nerd Font Mono"
+bold.family = "FiraCode Nerd Font Mono"
