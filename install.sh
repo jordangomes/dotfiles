@@ -19,7 +19,7 @@ else
 fi
 
 # Install Command Line Utilities
-yay -S --needed fish starship stow neovim
+yay -S --needed fish starship stow neovim fastfetch
 
 # Installing Desktop Core Packages
 yay -S --needed hyprland hyprlock hyprpaper rofi-wayland waybar
@@ -30,10 +30,38 @@ yay -S --needed network-manager-applet grim slurp wl-clipboard nvim
 # Install Fonts
 yay -S --needed otf-firamono-nerd ttf-firacode-nerd ttf-hack ttf-icomoon-feather otf-font-awesome
 
+# Install Cursor
+yay -S --needed rose-pine-hyprcursor
+
+# Install KDE tools/utils
+yay -S --needed plasma-workspace \
+        kservice5 \
+        kdbusaddons5 \
+        kfilemetadata5 \
+        kconfig5  \
+        kcoreaddons5 \
+        kcrash5 \
+        kguiaddons5 \
+        ki18n5 \
+        kitemviews5 \
+        kwidgetsaddons5 \
+        kwindowsystem5 \
+        kservice5 \
+        dolphin \
+        dolphin-plugins \
+        kdegraphics-thumbnailers \
+        ffmpegthumbs \
+        kdeconnect \
+        sshfs
+
+# Install rice
+yay -S -needed qt6ct-kde candy-icons-git plasma5-themes-sweet-full-git sweet-gtk-theme
+
 # Install Desktop Apps
-yay -S --needed alacritty zen-browser-bin nautilus steam discord spotify visual-studio-code-bin mpv
+yay -S --needed alacritty zen-browser-bin nautilus steam discord spotify visual-studio-code-bin mpv gwenview gimp libreoffice-still
 
 # Install dotfiles
+cd $SCRIPT_DIR
 stow .
 
 # return to the users initial directory
