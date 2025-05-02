@@ -22,7 +22,7 @@ fi
 yay -S --needed fish starship stow neovim fastfetch
 
 # Installing Desktop Core Packages
-yay -S --needed hyprland hyprlock hyprpaper rofi-wayland waybar
+yay -S --needed hyprland hyprlock hyprpaper rofi-wayland waybar xdg-desktop-portal xdg-desktop-portal-hyprland
 
 # Install Core Utilities
 yay -S --needed network-manager-applet grim slurp wl-clipboard nvim
