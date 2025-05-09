@@ -22,13 +22,10 @@ fi
 yay -S --needed fish starship stow neovim fastfetch
 
 # Installing Desktop Core Packages
-yay -S --needed hyprland hyprlock hyprpaper ags-hyprpanel-git xdg-desktop-portal xdg-desktop-portal-hyprland
+yay -S --needed hyprland hyprlock hyprpaper rofi-wayland waybar xdg-desktop-portal xdg-desktop-portal-hyprland
 
 # Install Core Utilities
-yay -S --needed network-manager-applet grimblas-git nvim
-
-# Install hyprpanel optional deps
-yay -S --needed pywal swww hyprpicker matugen
+yay -S --needed network-manager-applet grimblas-git pamixer dunst nvim 
 
 # Install Fonts
 yay -S --needed otf-firamono-nerd ttf-firacode-nerd ttf-hack ttf-icomoon-feather otf-font-awesome
@@ -61,7 +58,7 @@ yay -S --needed plasma-workspace \
 yay -S -needed qt6ct-kde candy-icons-git plasma5-themes-sweet-full-git sweet-gtk-theme
 
 # Install Desktop Apps
-yay -S --needed alacritty zen-browser-bin nautilus steam discord spotify visual-studio-code-bin mpv gwenview gimp libreoffice-still
+yay -S --needed alacritty zen-browser-bin steam discord spotify visual-studio-code-bin mpv gwenview gimp libreoffice-still
 
 # Install dotfiles
 cd $SCRIPT_DIR
