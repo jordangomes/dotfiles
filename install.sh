@@ -25,7 +25,7 @@ yay -S --needed fish starship stow neovim fastfetch
 yay -S --needed hyprland hyprlock hyprpaper rofi-wayland waybar xdg-desktop-portal xdg-desktop-portal-hyprland
 
 # Install Core Utilities
-yay -S --needed network-manager-applet grimblas-git pamixer dunst nvim 
+yay -S --needed network-manager-applet grimblast-git pamixer dunst nvim 
 
 # Install Fonts
 yay -S --needed otf-firamono-nerd ttf-firacode-nerd ttf-hack ttf-icomoon-feather otf-font-awesome
