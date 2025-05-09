@@ -22,10 +22,13 @@ fi
 yay -S --needed fish starship stow neovim fastfetch
 
 # Installing Desktop Core Packages
-yay -S --needed hyprland hyprlock hyprpaper rofi-wayland waybar xdg-desktop-portal xdg-desktop-portal-hyprland
+yay -S --needed hyprland hyprlock hyprpaper ags-hyprpanel-git xdg-desktop-portal xdg-desktop-portal-hyprland
 
 # Install Core Utilities
-yay -S --needed network-manager-applet grim slurp wl-clipboard nvim
+yay -S --needed network-manager-applet grimblas-git nvim
+
+# Install hyprpanel optional deps
+yay -S --needed pywal swww hyprpicker matugen
 
 # Install Fonts
 yay -S --needed otf-firamono-nerd ttf-firacode-nerd ttf-hack ttf-icomoon-feather otf-font-awesome
@@ -33,7 +36,7 @@ yay -S --needed otf-firamono-nerd ttf-firacode-nerd ttf-hack ttf-icomoon-feather
 # Install Cursor
 yay -S --needed rose-pine-hyprcursor
 
-# Install KDE tools/utils
+# Install KDE tools/utils for dolphin
 yay -S --needed plasma-workspace \
         kservice5 \
         kdbusaddons5 \
