@@ -4,4 +4,3 @@ end
 
 set fish_greeting
 starship init fish | source
-cat ~/.cache/wal/sequences &
