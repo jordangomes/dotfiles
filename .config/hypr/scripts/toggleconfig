@@ -1,0 +1,33 @@
+#!/bin/bash
+monitor_file=$HOME/.config/hypr/monitors.conf
+monitor_desktop_file=$HOME/dotfiles/.config/hypr/monitors-desktop.conf
+monitor_laptop_file=$HOME/dotfiles/.config/hypr/monitors-laptop.conf
+
+
+waybar_file=$HOME/.config/waybar/config
+waybar_desktop_file=$HOME/dotfiles/.config/waybar/config-desktop
+waybar_laptop_file=$HOME/dotfiles/.config/waybar/config-laptop
+
+current_file=$(realpath $monitor_file)
+echo $current_file
+
+if [ $current_file = $monitor_laptop_file ]; then
+	echo "Config is Laptop - changing to Desktop"
+	ln -sf $monitor_desktop_file $monitor_file
+	ln -sf $waybar_desktop_file $waybar_file
+elif [ $current_file = $monitor_desktop_file ]; then
+	echo "Config is Desktop - changing to Laptop"
+	ln -sf $monitor_laptop_file $monitor_file
+	ln -sf $waybar_laptop_file $waybar_file
+else
+	echo "No config detected - changing to Laptop"
+	ln -sf $monitor_laptop_file $monitor_file
+	ln -sf $waybar_laptop_file $waybar_file
+fi
+
+# reload hyprland config
+hyprctl reload
+
+# reload waybar
+killall waybar
+hyprctl dispatch exec waybar

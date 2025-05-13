@@ -5,6 +5,7 @@
         "custom/launcher",
         "cpu",
         "memory",
+	"battery",
         "custom/spotify"
     ],
     "modules-center": [
@@ -19,17 +20,15 @@
     ],
     "hyprland/workspaces": {
         "persistent-workspaces": {
-            "HDMI-A-1": [
+            "eDP-1": [
                 1,
                 2,
                 3,
                 4,
                 5,
                 6,
-                7
-            ],
-            "DP-1": [
-                8,
+                7,
+		8,
                 9
             ]
         },
